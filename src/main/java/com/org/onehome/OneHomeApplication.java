@@ -7,8 +7,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import com.org.onehome.login.model.UserModel;
 import com.org.onehome.login.repository.UserRepository;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 @SpringBootApplication
+@EnableWebMvc
 public class OneHomeApplication implements CommandLineRunner{
 
 	@Autowired
