@@ -6,7 +6,8 @@ import org.springframework.stereotype.Repository;
 import com.org.onehome.login.model.*;
 
 @Repository
-public interface UserRepository extends JpaRepository<UserModel, Long>{
-			
+public interface UserRepository extends JpaRepository<UserModel, Long> {
 
+	public UserModel findByName(String username);
+	public UserModel getUserByNameAndPassword(String userName, String password);
 }

@@ -10,9 +10,9 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 public class UserControllerAdvice {
 
 	@ResponseBody
-	  @ExceptionHandler(UserNotFoundException.class)
-	  @ResponseStatus(HttpStatus.NOT_FOUND)
-	  String employeeNotFoundHandler(UserNotFoundException ex) {
-	    return ex.getMessage();
-	  }
+	@ExceptionHandler(UserNotFoundException.class)
+	@ResponseStatus(HttpStatus.NOT_FOUND)
+	String employeeNotFoundHandler(UserNotFoundException ex) {
+		return ex.getMessage();
+	}
 }
